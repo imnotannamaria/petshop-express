@@ -112,6 +112,28 @@
       "contato": "(11) 99999-9999",
       "vacinado": true,
       "servicos": []
+    },
+    {
+      "nome": "Salem",
+      "tipo": "Gato",
+      "idade": 80,
+      "raca": "preto",
+      "peso": 5,
+      "tutor": "Teddy",
+      "contato": "(11) 95929-9592",
+      "vacinado": false,
+      "servicos": []
+    },
+    {
+      "nome": "Salem",
+      "tipo": "Gato",
+      "idade": 80,
+      "raca": "preto",
+      "peso": 5,
+      "tutor": "Teddy",
+      "contato": "(11) 95929-9592",
+      "vacinado": false,
+      "servicos": []
     }
   ]
 }

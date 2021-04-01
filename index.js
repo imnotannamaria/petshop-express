@@ -11,25 +11,6 @@ app.get('/pets', (request, response) => {
 });
 
 //ADICIONA PETS
-// app.post('/pets', (request, response) => {
-//     const { 
-//         nome, 
-//         tipo, 
-//         idade, 
-//         raca, 
-//         peso, 
-//         tutor, 
-//         contato, 
-//     } = request.body;
-    
-//     const adicionarPet = { nome, tipo, idade, raca, peso, tutor, contato}
-
-//     // pets.push(petshop.adicionarPets());
-//     petshop.adicionarPet(pet);
-
-//     return response.json(adicionarPet); 
-// });
-
 app.post('/pets', (request, response) => {
     const { nome, tipo, idade, raca, peso, tutor, contato } = request.body;
     const pet = {
@@ -46,7 +27,8 @@ app.post('/pets', (request, response) => {
 
     petshop.adicionarPets(pet);
     return response.json(pet);
-  });
+});
+
 
 app.listen(3000, () => {
     console.log('Servidor rodando 🚀');
