@@ -14,16 +14,17 @@ const petshop = {
     },
 
     listarPets : () => {
+        let textoListaPets = "PETSHOP \n";
         bancoDados.pets.forEach((pet) => {
-            let {nome, idade, tipo, tutor, raca, vacinado} = pet;
             
-            //console.log(`${pet.nome}, ${pet.idade} anos, ${pet.tipo}, ${pet.raca}, ${(pet.vacinado) ? 'vacinado': 'não vacinado'}`);
-            console.log(`${nome}, ${idade} anos, ${tipo}, ${tutor}, ${raca}, ${(vacinado) ? 'vacinado': 'não vacinado'}`);
+            textoListaPets += (`${pet.nome}, ${pet.idade} anos, ${pet.tipo}, ${pet.tutor}, ${pet.raca}, ${(pet.vacinado) ? 'vacinado': 'não vacinado'} \n`);
     
-            // pet.servicos.forEach((servico) => {
-            //     console.log(`${servico.data} - ${servico.nome}`);
-            // })
+            pet.servicos.forEach((servico) => {
+                textoListaPets += (`${servico.data} - ${servico.nome}`);
+            })
         })
+
+        return textoListaPets;
     },
 
     vacinarPet : pet => {
@@ -57,10 +58,21 @@ const petshop = {
         console.log(`${petVacinadosCampanha} pets foram vaciados nessa campanha!`);
     },
 
-    adicionarPet : novoPet => {
-        bancoDados.pets.push(novoPet);
-        atualizarBanco();
-        console.log(`${novoPet.nome} foi adicionado com sucesso!`);
+    // adicionarPet : novoPet => {
+    //     bancoDados.pets.push(novoPet);
+    //     atualizarBanco();
+    //     textoAdicionaPets += (`${novoPet.nome} foi adicionado com sucesso!`);
+    // },
+    adicionarPets: (...novospets) => {
+        let textoAddPets = "Adicionando PET";
+        novospets.forEach((novopet) => {
+          dadospet.pets.push(novopet);
+        });
+    
+        //attbancopets();
+        novospets.forEach((pet) => {
+            textoAddPets += (`${pet.nome} foi adicionado com sucesso!`);
+        });
     },
 
     darBanhoPet : pet => {
