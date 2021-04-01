@@ -1,0 +1,70 @@
+{
+    "pets": [
+      {
+        "nome": "Teddy",
+        "tipo": "Cachorro",
+        "idade": 3,
+        "raca": "Pug",
+        "peso": 5,
+        "tutor": "Bruna",
+        "contato": "(81) 912357903",
+        "vacinado": true,
+        "servicos": []
+      },
+      {
+        "nome": "Vegas",
+        "tipo": "Cachorro",
+        "idade": 6,
+        "raca": "Labrador",
+        "peso": 5,
+        "tutor": "Archie",
+        "contato": "(81) 901827301",
+        "vacinado": true,
+        "servicos": []
+      },
+      {
+        "nome": "Salem",
+        "tipo": "Gato",
+        "idade": 18,
+        "raca": "Vira-Lata",
+        "peso": 3,
+        "tutor": "Sabrina Spellman",
+        "contato": "(81) 9739109182",
+        "vacinado": false,
+        "servicos": []
+      },
+      {
+        "nome": "Judas",
+        "tipo": "Cachorro",
+        "idade": 3,
+        "raca": "Pug",
+        "peso": 5,
+        "tutor": "Stefani",
+        "contato": "(81) 912357903",
+        "vacinado": false,
+        "servicos": []
+      },
+      {
+        "nome": "Catra",
+        "tipo": "Gato",
+        "idade": 3,
+        "raca": "Vira-Lata",
+        "peso": 5,
+        "tutor": "SW",
+        "contato": "(81) 912357903",
+        "vacinado": false,
+        "servicos": []
+      },
+      {
+        "nome": "Melissa",
+        "tipo": "Gato",
+        "idade": 3,
+        "raca": "Vira-Lata",
+        "peso": 5,
+        "tutor": "Mariana",
+        "contato": "(81) 912357903",
+        "vacinado": false,
+        "servicos": []
+      }
+    ]
+  }
