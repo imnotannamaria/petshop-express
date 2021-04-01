@@ -66,10 +66,9 @@ const petshop = {
     adicionarPets: (...novospets) => {
         let textoAddPets = "Adicionando PET";
         novospets.forEach((novopet) => {
-          dadospet.pets.push(novopet);
+          bancoDados.pets.push(novopet);
         });
-    
-        //attbancopets();
+
         novospets.forEach((pet) => {
             textoAddPets += (`${pet.nome} foi adicionado com sucesso!`);
         });
